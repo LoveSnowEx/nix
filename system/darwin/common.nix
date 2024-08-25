@@ -44,11 +44,6 @@
     };
   };
 
-  environment.shells = with pkgs; [
-    bashInteractive
-    zsh
-  ];
-
   nix.configureBuildUsers = true;
 
   nix.settings = {

@@ -7,7 +7,7 @@ in
   imports = [
     ./common.nix
     ./homebrew.nix
-    ./system-package.nix
+    ./environment.nix
   ];
 
   # Hostname
