@@ -1,7 +1,9 @@
-{ pkgs, lib, ... }:
+{ ... }:
 {
-  programs.starship.enable = true;
-  programs.starship.settings = (import ./starship.nix);
+  imports = [
+    ./starship.nix
+  ];
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;

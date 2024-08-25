@@ -1,21 +1,5 @@
-{ pkgs, lib, ... }:
-let
-  username = "lovesnowex";
-in
+{ ... }:
 {
-  imports = [
-    ./zsh
-  ];
-  nixpkgs.config.allowUnfree = true;
-  home = {
-    username = username;
-    homeDirectory = lib.mkForce "/Users/${username}";
-    stateVersion = "24.05";
-    packages = with pkgs; [
-      nil
-      nixpkgs-fmt
-    ];
-  };
   programs.git = {
     # Sign
     # signing = {
@@ -31,5 +15,4 @@ in
     #   };
     # };
   };
-  programs.home-manager.enable = true;
 }

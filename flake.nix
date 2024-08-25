@@ -27,33 +27,35 @@
     };
   };
 
-  outputs = { nixpkgs-darwin, home-manager-darwin, darwin, ... }: {
-    formatter.aarch64-darwin = nixpkgs-darwin.legacyPackages.aarch64-darwin.nixpkgs-fmt;
+  outputs = { nixpkgs-darwin, home-manager-darwin, darwin, ... }@inputs:
+    let
+      system = "aarch64-darwin";
+    in
+    {
+      formatter.${system} = nixpkgs-darwin.legacyPackages.${system}.nixpkgs-fmt;
 
-    darwinConfigurations = {
-      "macbook" =
-        darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
+      darwinConfigurations = {
+        "macbook" = darwin.lib.darwinSystem {
+          inherit system;
           modules = [
             ./system/darwin
             (import ./overlay)
             home-manager-darwin.darwinModules.home-manager
             {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-
-              home-manager.users = {
-                lovesnowex = import ./home/lovesnowex/macos.nix;
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users = {
+                  lovesnowex = import ./home/lovesnowex;
+                };
+                extraSpecialArgs = inputs;
+                sharedModules = [
+                  (import ./lib/zimfw home-manager-darwin)
+                ];
               };
-              # home-manager.extraSpecialArgs = {
-              #       naersk = inputs.naersk;
-              # };
-              home-manager.sharedModules = [
-                (import ./lib/zimfw home-manager-darwin)
-              ];
             }
           ];
         };
+      };
     };
-  };
 }
