@@ -39,9 +39,9 @@
           inherit system;
           modules = [
             ./system/darwin
-            (import ./overlay)
             home-manager-darwin.darwinModules.home-manager
             {
+              nixpkgs.overlays = (import ./overlays);
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
