@@ -5,8 +5,8 @@ let
 in
 {
   imports = [
-    ./app.nix
     ./common.nix
+    ./homebrew.nix
     ./system-package.nix
   ];
 
