@@ -35,7 +35,7 @@
         darwin.lib.darwinSystem {
           system = "aarch64-darwin";
           modules = [
-            ./system/macbook
+            ./system/darwin
             (import ./overlay)
             home-manager-darwin.darwinModules.home-manager
             {
