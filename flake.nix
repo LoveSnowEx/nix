@@ -30,13 +30,13 @@
   outputs = { nixpkgs-darwin, home-manager-darwin, darwin, ... }: {
     formatter.aarch64-darwin = nixpkgs-darwin.legacyPackages.aarch64-darwin.nixpkgs-fmt;
 
-    darwinConfigurations ={
+    darwinConfigurations = {
       "macbook" =
         darwin.lib.darwinSystem {
           system = "aarch64-darwin";
           modules = [
             ./system/macbook
-            (import ./overlays)
+            (import ./overlay)
             home-manager-darwin.darwinModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
