@@ -48,7 +48,7 @@
                 users = {
                   lovesnowex = import ./home/lovesnowex;
                 };
-                extraSpecialArgs = inputs;
+                extraSpecialArgs = { inherit inputs; };
                 sharedModules = [
                   (import ./lib/zimfw home-manager-darwin)
                 ];
