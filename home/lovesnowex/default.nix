@@ -2,6 +2,6 @@
   imports = [
     ./darwin
     ./git
-    ./zsh
+    ./shell
   ];
 }

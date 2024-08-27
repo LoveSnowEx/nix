@@ -11,6 +11,7 @@ in
     packages = with pkgs; [
       nil
       nixpkgs-fmt
+      asdf-vm
     ];
     language = {
       base = "en_US.UTF-8";
