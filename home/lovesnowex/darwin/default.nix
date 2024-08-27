@@ -12,6 +12,7 @@ in
       nil
       nixpkgs-fmt
       asdf-vm
+      devenv
     ];
     language = {
       base = "en_US.UTF-8";
