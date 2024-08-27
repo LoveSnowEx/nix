@@ -21,6 +21,7 @@ in
       jwt-cli
       micro
       nodejs_22
+      python312
       tcping-go
       typst
       tree
