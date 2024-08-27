@@ -25,5 +25,9 @@
       enable = true;
       nix-direnv.enable = true;
     };
+
+    go = {
+      enable = true;
+    };
   };
 }

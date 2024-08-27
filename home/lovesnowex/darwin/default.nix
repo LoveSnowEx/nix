@@ -11,8 +11,19 @@ in
     packages = with pkgs; [
       nil
       nixpkgs-fmt
-      asdf-vm
+      act
+      bat
+      btop
       devenv
+      gh
+      graphviz
+      jq
+      jwt-cli
+      micro
+      nodejs_22
+      tcping-go
+      typst
+      tree
     ];
     language = {
       base = "en_US.UTF-8";

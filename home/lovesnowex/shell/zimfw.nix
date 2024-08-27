@@ -13,7 +13,6 @@
     "zsh-users/zsh-syntax-highlighting"
     "homebrew"
     "archive"
-    "asdf"
     "direnv"
     "exa"
     "git"
