@@ -24,8 +24,9 @@ in
       nodejs_22
       python312
       tcping-go
-      typst
       tree
+      typst
+      zulu17
     ];
     language = {
       base = "en_US.UTF-8";
