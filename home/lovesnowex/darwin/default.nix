@@ -18,6 +18,7 @@ in
       gh
       graphviz
       jq
+      just
       jwt-cli
       micro
       nodejs_22
