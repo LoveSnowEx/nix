@@ -19,6 +19,10 @@
       enable = true;
     };
 
+    fd = {
+      enable = true;
+    };
+
     fzf = {
       enable = true;
     };
