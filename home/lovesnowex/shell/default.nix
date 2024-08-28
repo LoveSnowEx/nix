@@ -6,19 +6,8 @@
   ];
 
   programs = {
-    eza = {
+    bat = {
       enable = true;
-      enableZshIntegration = true;
-    };
-
-    zoxide = {
-      enable = true;
-      enableZshIntegration = true;
-    };
-
-    fzf = {
-      enable = true;
-      enableZshIntegration = true;
     };
 
     direnv = {
@@ -26,7 +15,27 @@
       nix-direnv.enable = true;
     };
 
+    eza = {
+      enable = true;
+    };
+
+    fzf = {
+      enable = true;
+    };
+
+    gh = {
+      enable = true;
+    };
+
     go = {
+      enable = true;
+    };
+
+    jq = {
+      enable = true;
+    };
+
+    zoxide = {
       enable = true;
     };
   };

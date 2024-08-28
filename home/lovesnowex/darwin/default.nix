@@ -12,12 +12,9 @@ in
       nil
       nixpkgs-fmt
       act
-      bat
       btop
       devenv
-      gh
       graphviz
-      jq
       just
       jwt-cli
       micro
