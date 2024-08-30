@@ -11,6 +11,8 @@ in
     packages = with pkgs; [
       nil
       nixpkgs-fmt
+      nix-tree
+      nix-output-monitor
       act
       btop
       devenv
