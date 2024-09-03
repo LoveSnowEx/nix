@@ -24,5 +24,13 @@
       export HISTORY_SUBSTRING_SEARCH_PREFIXED=1
       export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
     '';
+    shellAliases = {
+      d = "docker";
+      dc = "docker compose";
+      e = "echo";
+      grep = "grep --color=auto";
+      m = "micro";
+      mkdir = "mkdir -pv";
+    };
   };
 }
