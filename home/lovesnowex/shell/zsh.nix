@@ -25,6 +25,7 @@
       export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
     '';
     shellAliases = {
+      b = "bat";
       d = "docker";
       dc = "docker compose";
       e = "echo";
