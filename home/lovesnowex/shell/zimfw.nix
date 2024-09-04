@@ -15,7 +15,7 @@
     "direnv"
     "exa"
     "git"
-    "ssh"
+    "sunlei/zsh-ssh"
     "termtitle"
     "utility"
     "Aloxaf/fzf-tab"
@@ -25,5 +25,6 @@
     "greymd/docker-zsh-completion"
     "zdharma-continuum/fast-syntax-highlighting"
     "joke/zim-github-cli"
+    "ohmyzsh/ohmyzsh --root plugins/sudo"
   ];
 }
