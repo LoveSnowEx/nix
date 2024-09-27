@@ -32,6 +32,7 @@
       grep = "grep --color=auto";
       m = "micro";
       mkdir = "mkdir -pv";
+      rm = "gomi";
     };
   };
 }

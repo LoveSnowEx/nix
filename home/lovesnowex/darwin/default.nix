@@ -20,6 +20,7 @@ in
       just
       jwt-cli
       micro
+      gomi
       nodejs_22
       python312
       tcping-go
