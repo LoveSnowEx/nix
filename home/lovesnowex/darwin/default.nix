@@ -20,6 +20,7 @@ in
       just
       jwt-cli
       micro
+      gdu
       gomi
       nodejs_22
       python312
