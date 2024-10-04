@@ -19,6 +19,7 @@ in
       graphviz
       just
       jwt-cli
+      mas
       micro
       gdu
       gomi
