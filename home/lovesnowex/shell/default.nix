@@ -2,7 +2,7 @@
 {
   imports = [
     ./starship.nix
-    ./zsh.nix
+    ./zsh
   ];
 
   programs = {
