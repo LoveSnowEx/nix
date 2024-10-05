@@ -1,4 +1,5 @@
 ''
+eval "$(/opt/homebrew/bin/brew shellenv)"
 setopt HIST_FIND_NO_DUPS
 export HISTORY_SUBSTRING_SEARCH_PREFIXED=1
 export HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
