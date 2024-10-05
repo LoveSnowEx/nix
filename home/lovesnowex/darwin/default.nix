@@ -25,6 +25,7 @@ in
       gomi
       nodejs_22
       python312
+      ripgrep
       tcping-go
       tree
       typst
