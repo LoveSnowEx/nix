@@ -2,15 +2,7 @@
 {
   programs.zsh = {
     enable = true;
-    enableCompletion = true;
-    completionInit = ''
-      autoload -Uz compinit
-      if [[ ! -e ~/.zcompdump(N.mh+24) ]]; then
-        compinit
-      else
-        compinit -C
-      fi
-    '';
+    enableCompletion = false;
     autocd = true;
     zimfw = import ./zimfw.nix;
     history = {
