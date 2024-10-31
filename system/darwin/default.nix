@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ ... }:
 let
   hostname = "LoveSnowEx-MacBook";
   computerName = "LoveSnowEx's MacBook Air";
@@ -14,4 +14,5 @@ in
   networking.computerName = "${computerName}";
   networking.hostName = "${hostname}";
   system.defaults.smb.NetBIOSName = "${hostname}";
+  system.stateVersion = 5;
 }
