@@ -16,6 +16,7 @@ in
       act
       btop
       devenv
+      hadolint
       graphviz
       just
       jwt-cli
@@ -29,6 +30,7 @@ in
       tcping-go
       tree
       typst
+      typstyle
       zulu17
     ];
     language = {
