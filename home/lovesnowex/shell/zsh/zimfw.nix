@@ -31,6 +31,5 @@
     "ohmyzsh/ohmyzsh --root plugins/copypath"
     "ohmyzsh/ohmyzsh --root plugins/cp"
     "ohmyzsh/ohmyzsh --root plugins/dircycle"
-    "ohmyzsh/ohmyzsh --root plugins/sudo"
   ];
 }
