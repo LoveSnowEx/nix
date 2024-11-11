@@ -18,6 +18,7 @@ in
       devenv
       hadolint
       graphviz
+      ijq
       just
       jwt-cli
       mas
@@ -27,6 +28,7 @@ in
       nodejs_22
       python312
       ripgrep
+      sqlite
       tcping-go
       tree
       typst
