@@ -7,7 +7,7 @@ in
   home = {
     username = username;
     homeDirectory = lib.mkForce "/Users/${username}";
-    stateVersion = "24.05";
+    stateVersion = "24.11";
     packages = with pkgs; [
       nil
       nixpkgs-fmt
