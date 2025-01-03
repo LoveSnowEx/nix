@@ -47,6 +47,27 @@
             }
           ];
         };
+        "pinkoi-macbook" = darwin.lib.darwinSystem {
+        inherit system;
+        modules = [
+            ./system/darwin
+            home-manager-darwin.darwinModules.home-manager
+            {
+              nixpkgs.overlays = import ./overlays;
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users = {
+                  pinkoi = import ./home/pinkoi;
+                };
+                extraSpecialArgs = { inherit inputs; };
+                sharedModules = [
+                  (import ./lib/zimfw home-manager-darwin)
+                ];
+              };
+            }
+          ];
+        };
       };
     };
 }
