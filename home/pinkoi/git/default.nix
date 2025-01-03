@@ -14,6 +14,7 @@
         format = "ssh";
         ssh = {
           program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+          allowedSignersFile = "~/.config/git/allowed_signers";
         };
       };
     };
