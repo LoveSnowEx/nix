@@ -1,0 +1,5 @@
+patch:
+  "schema_list/+":
+    - schema: full_bopomofo
+    - schema: double_bopomo
+    - schema: ls_double_pinyin
