@@ -13,12 +13,14 @@ in
       nixpkgs-fmt
       nix-tree
       nix-output-monitor
+      _1password-cli
       act
       btop
       devenv
       hadolint
       graphviz
       ijq
+      jdk21_headless
       just
       jwt-cli
       mas
@@ -33,7 +35,6 @@ in
       tree
       typst
       typstyle
-      zulu17
     ];
     language = {
       base = "en_US.UTF-8";
