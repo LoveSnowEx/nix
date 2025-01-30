@@ -35,6 +35,7 @@ in
       tree
       typst
       typstyle
+      uutils-coreutils-noprefix
     ];
     language = {
       base = "en_US.UTF-8";
