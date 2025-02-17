@@ -9,8 +9,7 @@ in
     homeDirectory = lib.mkForce "/Users/${username}";
     stateVersion = "25.05";
     packages = with pkgs; [
-      nil
-      nixpkgs-fmt
+      nixfmt-rfc-style
       nix-tree
       nix-output-monitor
       _1password-cli
