@@ -15,6 +15,7 @@ in
       nix-output-monitor
       act
       btop
+      cron
       devenv
       hadolint
       graphviz
