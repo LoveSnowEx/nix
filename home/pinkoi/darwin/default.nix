@@ -24,6 +24,7 @@ in
       jwt-cli
       mas
       micro
+      moreutils
       gdu
       gomi
       nodejs_22
