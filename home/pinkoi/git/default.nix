@@ -17,6 +17,8 @@
           allowedSignersFile = "~/.config/git/allowed_signers";
         };
       };
+      push.autoSetupRemote = true;
+      fetch.prune = true;
     };
   };
 }
