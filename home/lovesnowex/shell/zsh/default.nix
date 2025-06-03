@@ -11,7 +11,7 @@
       ignoreAllDups = true;
       ignoreSpace = true;
     };
-    initExtra = import ./init_extra.nix;
+    initContent = import ./init_extra.nix;
     shellAliases = {
       b = "bat";
       d = "docker";
