@@ -18,7 +18,6 @@
         };
       };
       push.autoSetupRemote = true;
-      fetch.prune = true;
     };
   };
 }
