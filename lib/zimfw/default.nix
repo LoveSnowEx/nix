@@ -87,7 +87,7 @@ in
       ZIM_HOME = cfg.zimfw.homeDir;
       ZIM_CONFIG_FILE = cfg.zimfw.configFile;
     };
-    programs.zsh.initExtra = concatStringsSep "\n" ([
+    programs.zsh.initContent = concatStringsSep "\n" ([
       (optionalString (cfg.zimfw.degit) ''
         zstyle ':zim:zmodule' use 'degit'
       '')

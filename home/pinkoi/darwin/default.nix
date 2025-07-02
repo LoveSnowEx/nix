@@ -17,6 +17,8 @@ in
       btop
       cron
       devenv
+      discordo
+      dust
       hadolint
       graphviz
       ijq
@@ -25,7 +27,6 @@ in
       mas
       micro
       moreutils
-      gdu
       gomi
       nodejs_22
       python312
