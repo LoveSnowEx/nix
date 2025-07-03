@@ -1,4 +1,4 @@
-# LoveSnowEx's Nix Configuration
+# My Nix Configuration
 
 ## Overview
 
