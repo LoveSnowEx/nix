@@ -4,6 +4,7 @@
   inputs = {
     # NixPKG
     nixpkgs-darwin.url = "github:NixOS/nixpkgs/nixpkgs-25.05-darwin";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     # Home Manager
     home-manager-darwin = {
@@ -16,9 +17,14 @@
       url = "github:lnl7/nix-darwin/nix-darwin-25.05";
       inputs.nixpkgs.follows = "nixpkgs-darwin";
     };
+
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
   };
 
-  outputs = { nixpkgs-darwin, home-manager-darwin, darwin, ... }@inputs:
+  outputs = { nixpkgs-darwin, home-manager-darwin, darwin, llm-agents, ... }@inputs:
     let
       system = "aarch64-darwin";
     in
@@ -53,7 +59,7 @@
             ./system/darwin
             home-manager-darwin.darwinModules.home-manager
             {
-              nixpkgs.overlays = import ./overlays;
+              nixpkgs.overlays = import ./overlays { inherit llm-agents; };
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;

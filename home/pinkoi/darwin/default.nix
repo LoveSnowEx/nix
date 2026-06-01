@@ -37,6 +37,7 @@ in
       typst
       typstyle
       zulu17
+      llm-agents.omp
     ];
     language = {
       base = "en_US.UTF-8";
