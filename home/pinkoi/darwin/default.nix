@@ -37,7 +37,6 @@ in
       typst
       typstyle
       zulu17
-      llm-agents.omp
       llm-agents.pi
     ];
     language = {
