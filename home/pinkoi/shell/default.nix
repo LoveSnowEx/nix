@@ -35,6 +35,16 @@
       enable = true;
     };
 
+    jujutsu = {
+      enable = true;
+      settings = {
+        user = {
+          email = "lsktw22@gmail.com";
+          name = "LoveSnowEx";
+        };
+      };
+    };
+
     jq = {
       enable = true;
     };
