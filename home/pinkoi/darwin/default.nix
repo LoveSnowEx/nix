@@ -9,7 +9,7 @@ in
     homeDirectory = lib.mkForce "/Users/${username}";
     stateVersion = "25.05";
     packages = with pkgs; [
-      nil
+      nixd
       nixpkgs-fmt
       nix-tree
       nix-output-monitor
@@ -38,6 +38,7 @@ in
       typstyle
       zulu17
       llm-agents.omp
+      llm-agents.pi
     ];
     language = {
       base = "en_US.UTF-8";
