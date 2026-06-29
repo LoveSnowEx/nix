@@ -14,5 +14,5 @@ in
   networking.computerName = "${computerName}";
   networking.hostName = "${hostname}";
   system.defaults.smb.NetBIOSName = "${hostname}";
-  system.stateVersion = 5;
+  system.stateVersion = 7;
 }
