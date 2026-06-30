@@ -33,7 +33,7 @@ in
       configFile = mkOption {
         default =
           if cfg.dotDir != null then
-            "$HOME/${cfg.dotDir}/.zimrc"
+            "${cfg.dotDir}/.zimrc"
           else
             "$HOME/.zimrc";
         type = types.str;
