@@ -1,2 +1,2 @@
 { llm-agents, ... }:
-llm-agents.overlays.default
+llm-agents.overlays.shared-nixpkgs
