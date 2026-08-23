@@ -2,13 +2,9 @@
 {
   programs.git = {
     enable = true;
-    userName = "LoveSnowEx";
-    userEmail = "lsktw22@gmail.com";
-    signing = {
-      signByDefault = true;
-      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICumxsUjMJPkNIyLlj4L1BYRYs6gBoozSDQw1GEVKWt5 lsktw22@gmail.com";
-    };
-    extraConfig = {
+    settings = {
+      user.name = "LoveSnowEx";
+      user.email = "lsktw22@gmail.com";
       commit.gpgSign = true;
       gpg = {
         format = "ssh";
@@ -18,6 +14,10 @@
         };
       };
       user.signingkey = "~/.ssh/id_ed25519.pub";
+    };
+    signing = {
+      signByDefault = true;
+      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICumxsUjMJPkNIyLlj4L1BYRYs6gBoozSDQw1GEVKWt5 lsktw22@gmail.com";
     };
   };
 }

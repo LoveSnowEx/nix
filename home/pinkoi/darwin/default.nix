@@ -3,7 +3,6 @@ let
   username = "pinkoi";
 in
 {
-  nixpkgs.config.allowUnfree = true;
   home = {
     username = username;
     homeDirectory = lib.mkForce "/Users/${username}";
@@ -15,7 +14,6 @@ in
       nix-output-monitor
       act
       btop
-      cron
       devenv
       discordo
       dust

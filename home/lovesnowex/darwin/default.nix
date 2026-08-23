@@ -3,13 +3,12 @@ let
   username = "lovesnowex";
 in
 {
-  nixpkgs.config.allowUnfree = true;
   home = {
     username = username;
     homeDirectory = lib.mkForce "/Users/${username}";
     stateVersion = "26.05";
     packages = with pkgs; [
-      nixfmt-rfc-style
+      nixfmt
       nix-tree
       nix-output-monitor
       _1password-cli

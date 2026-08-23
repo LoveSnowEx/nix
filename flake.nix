@@ -38,7 +38,7 @@
             ./system/darwin
             home-manager-darwin.darwinModules.home-manager
             {
-              nixpkgs.overlays = import ./overlays;
+              nixpkgs.overlays = import ./overlays { inherit llm-agents; };
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
