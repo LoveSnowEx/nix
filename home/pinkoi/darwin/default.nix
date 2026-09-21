@@ -34,6 +34,7 @@ in
       tree
       typst
       typstyle
+      uutils-coreutils-noprefix
       zulu17
       llm-agents.pi
     ];
