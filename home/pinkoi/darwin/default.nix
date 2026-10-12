@@ -22,11 +22,13 @@ in
       ijq
       just
       jwt-cli
+      libmysqlclient.dev
       mas
       micro
       moreutils
       gomi
       nodejs_22
+      pkg-config
       python312
       ripgrep
       sqlite
